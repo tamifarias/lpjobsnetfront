@@ -19,12 +19,9 @@
     "react-scripts": "4.0.3",
     "reactstrap": "^8.9.0",
     "redux": "^4.1.1",
-    "web-vitals": "^1.0.1",
-    "homepage": "https://tamifarias.github.io/lpjobsnetfront"
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
