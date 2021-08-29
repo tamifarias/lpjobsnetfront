@@ -47,7 +47,7 @@ class Contact extends Component {
                 <div className="row">
                     <Breadcrumb>
                         <BreadcrumbItem><Link to='/home'>Home</Link></BreadcrumbItem>
-                        <BreadcrumbItem active>Contact Us</BreadcrumbItem>
+                        <BreadcrumbItem active>Contate-nos</BreadcrumbItem>
                     </Breadcrumb>
                     <div className="col-12">
                         <h3>Dados Pessoais</h3>
@@ -64,7 +64,7 @@ class Contact extends Component {
                                         placeholder="Nome Completo"
                                         className="form-control"
                                         validators={{
-                                            required, minLength: minLength(3), maxLength: maxLength(30)
+                                            required
                                         }}
                                          />
                                     <Errors
@@ -72,9 +72,7 @@ class Contact extends Component {
                                         model=".nome"
                                         show="touched"
                                         messages={{
-                                            required: 'Required\n',
-                                            minLength: 'Nome deve ter mais de 2 caracteres',
-                                            maxLength: 'Nome deve ter até 30 caracteres'
+                                            required: 'Campo obrigatório'
                                         }}
                                     />
                                 </Col>
@@ -85,17 +83,6 @@ class Contact extends Component {
                                     <Control.text model=".cargopretendido" id="cargo" name="cargo"
                                         placeholder="Cargo Pretendido"
                                         className="form-control"
-                                        validators={{
-                                            minLength: minLength(3)
-                                        }}
-                                    />
-                                    <Errors
-                                        className="text-danger"
-                                        model=".cargo"
-                                        show="touched"
-                                        messages={{
-                                            required: 'Required\n'
-                                        }}
                                     />
                                 </Col>
                             </Row>
@@ -127,7 +114,7 @@ class Contact extends Component {
                                         placeholder="01012001"
                                         className="form-control"
                                         validators={{
-                                            required, minLength: minLength(8)
+                                            required
                                         }}
                                     />
                                     <Errors
@@ -135,8 +122,7 @@ class Contact extends Component {
                                         model=".dtnascimento"
                                         show="touched"
                                         messages={{
-                                            required: 'Obrigatório ',
-                                            minLength: 'Formato errado',
+                                            required: 'Campo obrigatório',
                                         }}
                                     />
                                 </Col>   
@@ -148,7 +134,7 @@ class Contact extends Component {
                                         placeholder="ex:. Nome da Rua, 56. Bloco 2, AP 301"
                                         className="form-control"
                                         validators={{
-                                            required, minLength: minLength(3)
+                                            required
                                         }}
                                     />
                                     <Errors
@@ -156,8 +142,7 @@ class Contact extends Component {
                                         model=".endereco"
                                         show="touched"
                                         messages={{
-                                            required: 'Required ',
-                                            minLength: 'Must be greater than 2 numbers ',
+                                            required: 'Campo obrigatório'
                                         }}
                                     />
                                 </Col>
@@ -169,7 +154,7 @@ class Contact extends Component {
                                         placeholder="Bairro"
                                         className="form-control"
                                         validators={{
-                                            required, minLength: minLength(3)
+                                            required
                                         }}
                                     />
                                     <Errors
@@ -177,8 +162,7 @@ class Contact extends Component {
                                         model=".bairro"
                                         show="touched"
                                         messages={{
-                                            required: 'Required ',
-                                            minLength: 'Must be greater than 2 numbers ',
+                                            required: 'Campo obrigatório'
                                         }}
                                     />
                                 </Col>
@@ -187,18 +171,6 @@ class Contact extends Component {
                                     <Control.text model = ".cep" id = "cep" name = "cep"
                                         placeholder = "00000000"
                                         className = "form-control"
-                                        validators = {{
-                                            required, minLength: minLength(8), isNumber, maxLength: maxLength(8)
-                                        }}
-                                    />
-                                    <Errors
-                                        className="text-danger"
-                                        model=".cep"
-                                        show="touched"
-                                        messages={{
-                                            required: 'Required ',
-                                            minLength: 'Must be greater than 2 numbers ',
-                                        }}
                                     />
                                 </Col>
                             </Row>
@@ -209,7 +181,7 @@ class Contact extends Component {
                                         placeholder="Cidade"
                                         className="form-control"
                                         validators={{
-                                            required, minLength: minLength(3)
+                                            required
                                         }}
                                     />
                                     <Errors
@@ -217,8 +189,7 @@ class Contact extends Component {
                                         model=".cidade"
                                         show="touched"
                                         messages={{
-                                            required: 'Required ',
-                                            minLength: 'Must be greater than 2 numbers ',
+                                            required: 'Campo obrigatório'
                                         }}
                                     />
                                 </Col>
@@ -236,10 +207,7 @@ class Contact extends Component {
                                         model=".celular"
                                         show="touched"
                                         messages={{
-                                            required: 'Required ',
-                                            minLength: 'Must be greater than 2 numbers ',
-                                            maxLength: 'Must be 15 numbers or less ',
-                                            isNumber: 'Must be a number'
+                                            isNumber: 'Formato errado'
                                         }}
                                      />
                                 </Col>
@@ -259,10 +227,7 @@ class Contact extends Component {
                                         model=".telnum"
                                         show="touched"
                                         messages={{
-                                            required: 'Required ',
-                                            minLength: 'Must be greater than 2 numbers ',
-                                            maxLength: 'Must be 15 numbers or less ',
-                                            isNumber: 'Must be a number'
+                                            isNumber: 'Formato errado'
                                         }}
                                      />
                                 </Col>
@@ -279,10 +244,7 @@ class Contact extends Component {
                                         model=".telnum2"
                                         show="touched"
                                         messages={{
-                                            required: 'Required ',
-                                            minLength: 'Must be greater than 2 numbers ',
-                                            maxLength: 'Must be 15 numbers or less ',
-                                            isNumber: 'Must be a number'
+                                            isNumber: 'Formato errado'
                                         }}
                                      />
                                 </Col>
@@ -302,8 +264,8 @@ class Contact extends Component {
                                         model=".email"
                                         show="touched"
                                         messages={{
-                                            required: 'Required ',
-                                            validEmail: 'Invalid Email Address'
+                                            required: 'Campo obrigatório',
+                                            validEmail: 'Email inválido'
                                         }}
                                      />
                                 </Col>
@@ -323,7 +285,7 @@ class Contact extends Component {
                                         model=".identidade"
                                         show="touched"
                                         messages={{
-                                            required: 'Required ',
+                                            required: 'Campo obrigatório',
                                         }}
                                      />
                                 </Col>
@@ -341,7 +303,7 @@ class Contact extends Component {
                                         model=".cpf"
                                         show="touched"
                                         messages={{
-                                            required: 'Required ',
+                                            required: 'Campo obrigatório',
                                         }}
                                      />
                                 </Col>
