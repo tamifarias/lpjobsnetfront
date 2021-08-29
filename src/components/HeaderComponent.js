@@ -54,12 +54,12 @@ class Header extends Component {
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to='/aboutus'>
-                                        <span className="fa fa-info fa-lg"></span> About Us
+                                        <span className="fa fa-info fa-lg"></span> Quem somos
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to='/contactus'>
-                                        <span className="fa fa-address-card fa-lg"></span> Contact Us
+                                        <span className="fa fa-address-card fa-lg"></span> Contate-nos
                                     </NavLink>
                                 </NavItem>
                             </Nav>
@@ -76,7 +76,7 @@ class Header extends Component {
                         <div className="row row-header">
                         <div className="col-12 col-sm-6">
                             <h1>JobsNET</h1>
-                            <p>A empresa JobsNET especialista em recrutamento e seleção de profissionais nas mais diversas áreas solicitou para a nossa fábrica de software desenvolver uma página para atração de profissionais para conectar as oportunidades de emprego.</p>
+                            <p>JobsNET especialista em recrutamento e seleção de profissionais nas mais diversas áreas.</p>
                         </div>
                         </div>
                     </div>
@@ -86,12 +86,12 @@ class Header extends Component {
                     <ModalBody>
                         <Form onSubmit={this.handleLogin}>
                                 <FormGroup>
-                                    <Label htmlFor="username">Username</Label>
+                                    <Label htmlFor="username">Usuário</Label>
                                     <Input type="text" id="username" name="username"
                                         innerRef={(input) => this.username = input} />
                                 </FormGroup>
                                 <FormGroup>
-                                    <Label htmlFor="password">Password</Label>
+                                    <Label htmlFor="password">Senha</Label>
                                     <Input type="password" id="password" name="password"
                                         innerRef={(input) => this.password = input}  />
                                 </FormGroup>
@@ -99,7 +99,7 @@ class Header extends Component {
                                     <Label check>
                                         <Input type="checkbox" name="remember"
                                         innerRef={(input) => this.remember = input}  />
-                                        Remember me
+                                        Manter conectado
                                     </Label>
                                 </FormGroup>
                                 <Button type="submit" value="submit" color="primary">Login</Button>
