@@ -36,13 +36,13 @@ function About(props) {
                     <BreadcrumbItem active>About Us</BreadcrumbItem>
                 </Breadcrumb>
                 <div className="col-12">
-                    <h3>About Us</h3>
+                    <h3>Quem somos</h3>
                     <hr />
                 </div>                
             </div>
             <div className="row row-content">
                 <div className="col-12 col-md-6">
-                    <h2>Our History</h2>
+                    <h2>Nossa história</h2>
                     <p>Donec iaculis porttitor diam, ut finibus mi bibendum et. Integer ac tellus non libero aliquam porta at a eros. Maecenas vehicula dui erat, nec sagittis orci tempus in. Nullam mollis nunc a velit consectetur, sed lacinia urna vehicula. Curabitur neque orci, sollicitudin ac lectus in, malesuada tincidunt leo.</p>
                     <p>Aenean consectetur vulputate pharetra. Sed tristique vulputate semper.<em>Maecenas vehicula dui erat, nec sagittis orci tempus in.</em> Proin ac metus vitae arcu aliquam volutpat vitae eu odio.</p>
                 </div>
